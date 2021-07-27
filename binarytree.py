@@ -53,13 +53,13 @@ class Solution:
             print("")
 
                 
-
-T=int(input("No. of nodes:"))
-myTree=Solution()
-root=None
-for i in range(T):
-    a=input("Node Values:")
-    root=myTree.insert(root,a)
-height=myTree.getHeight(root)
-print(f"Height={height}")
-myTree.levelOrder(root)
+if __name__=="__main__":
+    T=int(input("No. of nodes:"))
+    myTree=Solution()
+    root=None
+    for i in range(T):
+        a=input("Node Values:")
+        root=myTree.insert(root,a)
+    height=myTree.getHeight(root)
+    print(f"Height={height}")
+    myTree.levelOrder(root)
